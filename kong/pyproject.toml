@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "kong"
+version = "0.1.0"
+description = ""
+authors = ["Shan-Ul-Haq <shanulhaq84@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+sqlmodel = "^0.0.18"
+psycopg = {extras = ["binary"], version = "^3.1.19"}
+python-multipart = "^0.0.9"
+email-validator = "^2.1.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+tenacity = "^8.3.0"
+pydantic = "^2.7.1"
+emails = "^0.6"
+gunicorn = "^22.0.0"
+aiokafka = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
